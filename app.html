@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>تجربة تطبيق AirCare</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Tajawal:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    body, html {
+      background: linear-gradient(135deg, #0a2956 0%, #1666b0 100%);
+      color: #fff;
+      min-height: 100vh;
+      background-size: 200% 200%;
+      animation: gradientMove 8s ease-in-out infinite;
+    }
+    @keyframes gradientMove {
+      0% {
+        background-position: 0% 50%;
+      }
+      50% {
+        background-position: 100% 50%;
+      }
+      100% {
+        background-position: 0% 50%;
+      }
+    }
+    .app-navbar {
+      width: 100%;
+      background: #fff;
+      box-shadow: 0 2px 8px 0 rgba(10,41,86,0.06);
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 0.7rem 0;
+      margin-bottom: 2rem;
+    }
+    .app-navbar .nav-logo {
+      font-size: 1.5rem;
+      font-weight: bold;
+      color: #0a2956;
+      letter-spacing: 1px;
+    }
+    .app-demo-root {
+      min-height: 80vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+    .phone-mockup {
+      margin: 2rem 0;
+      width: 400px;
+      max-width: 98vw;
+      height: 700px;
+      max-height: 90vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-sizing: border-box;
+      border-top: 6px solid #1666b0;
+    }
+    .hidden { display: none !important; }
+    .menu-btn-icon {
+      margin-left: 0.7rem;
+      font-size: 1.3rem;
+      vertical-align: middle;
+      display: inline-block;
+    }
+    .phone-screen h3 {
+      margin-bottom: 1.5rem;
+    }
+    .phone-screen {
+      width: 100%;
+      height: 100%;
+      box-sizing: border-box;
+      padding: 2.5rem 1.2rem 1.2rem 1.2rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-start;
+      gap: 1rem;
+    }
+    .phone-screen .input-group {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      background: #f7fafd;
+      border-radius: 2rem;
+      border: 1.5px solid #e3eaf3;
+      margin-bottom: 0.5rem;
+      padding: 0.2rem 1rem;
+      min-height: 44px;
+      box-sizing: border-box;
+    }
+    .phone-screen .input-group svg {
+      margin-left: 0.5rem;
+      color: #1666b0;
+      flex-shrink: 0;
+    }
+    .phone-screen input[type="email"], .phone-screen input[type="password"] {
+      border: none;
+      background: transparent;
+      color: #0a2956;
+      font-size: 1rem;
+      width: 100%;
+      outline: none;
+      font-family: inherit;
+      text-align: right;
+      padding: 0.7rem 0;
+      min-width: 0;
+    }
+    .phone-screen .input-group:focus-within {
+      border-color: #1666b0;
+    }
+    .phone-screen button {
+      word-break: break-word;
+      white-space: normal;
+      font-size: 1.1rem;
+      padding: 0.9rem 0;
+    }
+    @media (max-width: 600px) {
+      .phone-mockup {
+        width: 98vw;
+        min-width: 0;
+        height: auto;
+        max-height: none;
+        margin: 1rem 0;
+        border-radius: 1.2rem;
+      }
+      .phone-screen {
+        padding: 1.2rem 0.5rem 0.5rem 0.5rem;
+        font-size: 0.95rem;
+      }
+      .phone-screen button {
+        font-size: 1rem;
+        padding: 0.8rem 0;
+      }
+      .phone-screen .input-group {
+        padding: 0.2rem 0.5rem;
+        min-height: 38px;
+      }
+      .phone-screen input[type="email"], .phone-screen input[type="password"] {
+        font-size: 0.95rem;
+        padding: 0.5rem 0;
+      }
+      .phone-screen .input-group svg {
+        font-size: 1rem;
+      }
+    }
+  </style>
+</head>
+<body dir="rtl">
+  <nav class="app-navbar">
+    <a href="index.html" class="nav-logo" style="text-decoration:none;">AirCare</a>
+  </nav>
+  <div class="app-demo-root">
+    <!-- Login Screen -->
+    <div class="phone-mockup" id="login-screen">
+      <div class="phone-screen login-screen">
+        <h3 style="margin-top:1.5rem;">مرحباً بك في<br>AirCare</h3>
+        <button style="margin-bottom:0.5rem;"><span class="menu-btn-icon">🔊</span>تفعيل الواجهة الصوتية</button>
+        <div class="input-group">
+          <svg width="20" height="20" fill="none" viewBox="0 0 24 24"><path fill="currentColor" d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4Zm0 2c-2.67 0-8 1.34-8 4v2c0 .55.45 1 1 1h14c.55 0 1-.45 1-1v-2c0-2.66-5.33-4-8-4Z"/></svg>
+          <input type="email" value="alanlovelq@gmail.com" aria-label="البريد الإلكتروني" readonly />
+        </div>
+        <div class="input-group">
+          <svg width="20" height="20" fill="none" viewBox="0 0 24 24"><path fill="currentColor" d="M12 17a2 2 0 0 0 2-2v-2a2 2 0 0 0-4 0v2a2 2 0 0 0 2 2Zm6-6V9a6 6 0 1 0-12 0v2a2 2 0 0 0-2 2v5a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-5a2 2 0 0 0-2-2Zm-8-2a4 4 0 1 1 8 0v2H6V9Z"/></svg>
+          <input type="password" value="************" aria-label="كلمة المرور" readonly />
+        </div>
+        <button id="login-btn"><span class="menu-btn-icon">🔐</span>تسجيل الدخول</button>
+      </div>
+    </div>
+    <!-- Main Menu -->
+    <div class="phone-mockup hidden" id="main-menu-screen">
+      <div class="phone-screen main-menu-screen">
+        <h3>AirCare</h3>
+        <button onclick="showScreen('audio-guidance-screen')"><span class="menu-btn-icon">🎧</span>الإرشاد الصوتي</button>
+        <button onclick="showScreen('journey-screen')"><span class="menu-btn-icon">✈️</span>بدء الرحلة</button>
+        <button onclick="showScreen('emergency-screen')"><span class="menu-btn-icon">🚨</span>زر الطوارئ</button>
+        <button onclick="showScreen('evaluation-screen')"><span class="menu-btn-icon">📝</span>تقييم الرحلة</button>
+        <button onclick="showScreen('settings-screen')"><span class="menu-btn-icon">⚙️</span>الإعدادات</button>
+        <button onclick="showScreen('login-screen')"><span class="menu-btn-icon">🔙</span>العودة</button>
+      </div>
+    </div>
+    <!-- Audio Guidance -->
+    <div class="phone-mockup hidden" id="audio-guidance-screen">
+      <div class="phone-screen audio-guidance-screen">
+        <span class="phone-icon">🎧</span>
+        <h3>الإرشاد الصوتي</h3>
+        <p>اتجه للأمام 5 خطوات<br/>وصلت للبوابة رقم 12</p>
+        <button><span class="menu-btn-icon">⏯️</span>تشغيل/إيقاف</button>
+        <button><span class="menu-btn-icon">🌐</span>تغيير اللغة</button>
+        <button onclick="showScreen('main-menu-screen')"><span class="menu-btn-icon">🔙</span>العودة</button>
+      </div>
+    </div>
+    <!-- Journey Start -->
+    <div class="phone-mockup hidden" id="journey-screen">
+      <div class="phone-screen journey-screen">
+        <span class="phone-icon">✈️</span>
+        <h3>بدء الرحلة</h3>
+        <button onclick="showScreen('nfc-screen')"><span class="menu-btn-icon">📶</span>ربط السوار عبر NFC</button>
+        <button onclick="showScreen('main-menu-screen')"><span class="menu-btn-icon">🔙</span>العودة</button>
+      </div>
+    </div>
+    <!-- NFC Screen -->
+    <div class="phone-mockup hidden" id="nfc-screen">
+      <div class="phone-screen nfc-screen">
+        <span class="phone-icon">✅</span>
+        <h3>تم التعرف على السوار عبر NFC</h3>
+        <button><span class="menu-btn-icon">💺</span>ربط مع المقعد</button>
+        <p>سيبدأ التوجيه الصوتي بعد لحظات</p>
+        <button onclick="showScreen('journey-screen')"><span class="menu-btn-icon">🔙</span>العودة</button>
+      </div>
+    </div>
+    <!-- Emergency -->
+    <div class="phone-mockup hidden" id="emergency-screen">
+      <div class="phone-screen emergency-screen">
+        <span class="phone-icon">🚨</span>
+        <h3>الطوارئ</h3>
+        <button class="emergency-btn"><span class="menu-btn-icon">🚨</span>الطوارئ</button>
+        <p>تم استدعاء المساعدة الرجاء البقاء في مكانك<br/>سيبدأ السوار بالوميض</p>
+        <button onclick="showScreen('main-menu-screen')"><span class="menu-btn-icon">🔙</span>العودة</button>
+      </div>
+    </div>
+    <!-- Evaluation -->
+    <div class="phone-mockup hidden" id="evaluation-screen">
+      <div class="phone-screen evaluation-screen">
+        <span class="phone-icon">📝</span>
+        <h3>التقييم</h3>
+        <p>كيف كانت تجربتك؟</p>
+        <button><span class="menu-btn-icon">✍️</span>اكتب ملاحظاتك</button>
+        <button><span class="menu-btn-icon">📤</span>ارسل التقييم</button>
+        <button onclick="showScreen('main-menu-screen')"><span class="menu-btn-icon">🔙</span>العودة</button>
+      </div>
+    </div>
+    <!-- Settings -->
+    <div class="phone-mockup hidden" id="settings-screen">
+      <div class="phone-screen settings-screen">
+        <span class="phone-icon">⚙️</span>
+        <h3>الإعدادات</h3>
+        <button><span class="menu-btn-icon">🌐</span>تغيير اللغة</button>
+        <button><span class="menu-btn-icon">🔊</span>مستوى الصوت</button>
+        <button><span class="menu-btn-icon">📶</span>إدارة السوار</button>
+        <button><span class="menu-btn-icon">💬</span>التواصل مع الدعم</button>
+        <button onclick="showScreen('login-screen')"><span class="menu-btn-icon">🚪</span>تسجيل الخروج</button>
+        <button onclick="showScreen('main-menu-screen')"><span class="menu-btn-icon">🔙</span>العودة</button>
+      </div>
+    </div>
+  </div>
+  <script>
+    function showScreen(id) {
+      document.querySelectorAll('.phone-mockup').forEach(el => el.classList.add('hidden'));
+      document.getElementById(id).classList.remove('hidden');
+    }
+    document.getElementById('login-btn').onclick = function() {
+      showScreen('main-menu-screen');
+    };
+  </script>
+</body>
+</html> 

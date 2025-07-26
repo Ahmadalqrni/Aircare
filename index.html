@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AirCare</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Tajawal:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    @media (max-width: 800px) {
+      .nav-links {
+        display: none;
+        flex-direction: column;
+        background: #fff;
+        position: absolute;
+        top: 60px;
+        right: 0;
+        width: 80vw;
+        box-shadow: 0 4px 24px 0 rgba(10,41,86,0.10);
+        border-radius: 0 0 1.2rem 1.2rem;
+        z-index: 200;
+        padding: 1.2rem 0;
+      }
+      .nav-links.open {
+        display: flex;
+      }
+      .nav-toggle {
+        display: block;
+        background: none;
+        border: none;
+        font-size: 2rem;
+        color: #0a2956;
+        cursor: pointer;
+        margin-left: 1rem;
+        z-index: 201;
+      }
+      .nav-container {
+        position: relative;
+      }
+    }
+    @media (min-width: 801px) {
+      .nav-toggle {
+        display: none;
+      }
+    }
+  </style>
+</head>
+<body dir="rtl">
+  <nav class="main-navbar">
+    <div class="nav-container">
+      <a href="index.html" class="nav-logo" style="text-decoration:none;">AirCare</a>
+      <button class="nav-toggle" aria-label="القائمة" onclick="document.querySelector('.nav-links').classList.toggle('open')">☰</button>
+      <ul class="nav-links">
+        <li><a href="#hero-screen">الرئيسية</a></li>
+        <li><a href="#about">عن اير كير</a></li>
+        <li><a href="#features">المميزات</a></li>
+        <li><a href="#benefits">الفئات المستفيدة</a></li>
+        <li><a href="#why">لماذا اير كير؟</a></li>
+        <li><a href="#partners">الشركاء</a></li>
+      </ul>
+    </div>
+  </nav>
+  <section id="hero-screen" class="hero-bg">
+    <div class="hero-center">
+      <h1 class="hero-title">AirCare</h1>
+      <p class="hero-slogan">رحلة آمنة ... ثقة واستقلالية</p>
+      <div class="hero-plane-center">
+        <svg class="hero-plane-anim" viewBox="0 0 430 430" width="180" height="180" style="display:block;margin:0 auto;" aria-label="Airplane" role="img" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="xMidYMid meet">
+          <defs>
+            <clipPath id="__lottie_element_26"><rect width="430" height="430" x="0" y="0"/></clipPath>
+            <clipPath id="__lottie_element_28"><path d="M0,0 L430,0 L430,430 L0,430z"/></clipPath>
+          </defs>
+          <g clip-path="url(#__lottie_element_26)"><g clip-path="url(#__lottie_element_28)" style="display: block;" transform="matrix(1,0,0,1,0,0)" opacity="1"><g style="display: block;" transform="matrix(1,0,0,1,-40.0577392578125,-34.90643310546875)" opacity="1"><g opacity="1" transform="matrix(1,0,0,1,250,250)"><path class="secondary" fill="#ebe6ef" fill-opacity="1" d=" M29.57200050354004,-73.81511688232422 C29.57200050354004,-73.81511688232422 156.51644897460938,-0.5626236796379089 156.51644897460938,-0.5626236796379089 C167.63943481445312,5.6773762702941895 162.93043518066406,21.684375762939453 149.96644592285156,21.684375762939453 C149.96644592285156,21.684375762939453 29.57200050354004,4.646881580352783 29.57200050354004,4.646881580352783 C29.57200050354004,4.646881580352783 29.57200050354004,99.50688171386719 29.57200050354004,99.50688171386719 C29.57200050354004,99.50688171386719 79.65247344970703,128.30438232421875 79.65247344970703,128.30438232421875 C86.57047271728516,132.1803741455078 83.62547302246094,159.44638061523438 75.5834732055664,159.44638061523438 C75.5834732055664,159.44638061523438 0,131.88787841796875 0,131.88787841796875 C0,131.88787841796875 -73.9614486694336,159.44638061523438 -73.9614486694336,159.44638061523438 C-82.00345611572266,159.44638061523438 -84.94845581054688,132.1803741455078 -78.03044891357422,128.30438232421875 C-78.03044891357422,128.30438232421875 -29.57200050354004,99.50688171386719 -29.57200050354004,99.50688171386719 C-29.57200050354004,99.50688171386719 -29.57200050354004,4.646881580352783 -29.57200050354004,4.646881580352783 C-29.57200050354004,4.646881580352783 -148.7499237060547,21.684375762939453 -148.7499237060547,21.684375762939453 C-161.71392822265625,21.684375762939453 -166.4229278564453,5.6773762702941895 -155.2999267578125,-0.5626236796379089 C-155.2999267578125,-0.5626236796379089 -29.57200050354004,-73.81511688232422 -29.57200050354004,-73.81511688232422 C-29.57200050354004,-73.81511688232422 -29.57200050354004,-130.51611328125 -29.57200050354004,-130.51611328125 C-29.57200050354004,-146.84811401367188 -16.332000732421875,-160.08811950683594 0,-160.08811950683594 C0,-160.08811950683594 0,-160.08811950683594 0,-160.08811950683594 C16.332000732421875,-160.08811950683594 29.57200050354004,-146.84811401367188 29.57200050354004,-130.51611328125 C29.57200050354004,-130.51611328125 29.57200050354004,-73.81511688232422 29.57200050354004,-73.81511688232422z"/></g><g style="mix-blend-mode: multiply;" opacity="0.99" transform="matrix(1,0,0,1,166.39199829101562,250)"><path class="secondary" fill="#ebe6ef" fill-opacity="1" d=" M83.60900115966797,-160.0871124267578 C83.60900115966797,-160.0871124267578 83.60900115966797,-160.0871124267578 83.60900115966797,-160.0871124267578 C67.2760009765625,-160.0871124267578 54.0369987487793,-146.84811401367188 54.0369987487793,-130.51611328125 C54.0369987487793,-130.51611328125 54.0369987487793,-73.81511688232422 54.0369987487793,-73.81511688232422 C54.0369987487793,-73.81511688232422 -71.69192504882812,-0.5616236925125122 -71.69192504882812,-0.5616236925125122 C-82.81492614746094,5.6773762702941895 -78.10692596435547,21.684375762939453 -65.14192962646484,21.684375762939453 C-65.14192962646484,21.684375762939453 54.0369987487793,4.646881580352783 54.0369987487793,4.646881580352783 C54.0369987487793,4.646881580352783 54.0369987487793,99.50688171386719 54.0369987487793,99.50688171386719 C54.0369987487793,99.50688171386719 5.577547550201416,128.3053741455078 5.577547550201416,128.3053741455078 C-1.3414523601531982,132.18138122558594 1.6045476198196411,159.44537353515625 9.646547317504883,159.44537353515625 C9.646547317504883,159.44537353515625 83.60900115966797,131.88888549804688 83.60900115966797,131.88888549804688 C83.60900115966797,131.88888549804688 83.60900115966797,-160.0871124267578 83.60900115966797,-160.0871124267578z"/></g></g><g style="display: block;" transform="matrix(1,0,0,1,-39.53874206542969,-35.61442565917969)" opacity="1"><g opacity="1" transform="matrix(1,0,0,1,250,249.85000610351562)"><path stroke-linecap="round" stroke-linejoin="round" fill-opacity="0" class="primary" stroke="#121331" stroke-opacity="1" stroke-width="7" d=" M29.57200050354004,-73.69599914550781 C29.57200050354004,-73.69599914550781 156.45301818847656,-0.039000000804662704 156.45301818847656,-0.039000000804662704 C167.2638702392578,6.201000213623047 162.68687438964844,22.20800018310547 150.0872802734375,22.20800018310547 C150.0872802734375,22.20800018310547 29.57200050354004,4.764999866485596 29.57200050354004,4.764999866485596 C29.57200050354004,4.764999866485596 29.57200050354004,99.625 29.57200050354004,99.625 C29.57200050354004,99.625 79.38500213623047,128.8280029296875 79.38500213623047,128.8280029296875 C86.10843658447266,132.70399475097656 83.24524688720703,159.968994140625 75.42945098876953,159.968994140625 C75.42945098876953,159.968994140625 0,132.00599670410156 0,132.00599670410156 C0,132.00599670410156 -75.42945098876953,159.968994140625 -75.42945098876953,159.968994140625 C-83.24524688720703,159.968994140625 -86.10843658447266,132.70399475097656 -79.38500213623047,128.8280029296875 C-79.38500213623047,128.8280029296875 -29.57200050354004,99.625 -29.57200050354004,99.625 C-29.57200050354004,99.625 -29.57200050354004,4.764999866485596 -29.57200050354004,4.764999866485596 C-29.57200050354004,4.764999866485596 -150.0872802734375,22.20800018310547 -150.0872802734375,22.20800018310547 C-162.68687438964844,22.20800018310547 -167.2638702392578,6.201000213623047 -156.45301818847656,-0.039000000804662704 C-156.45301818847656,-0.039000000804662704 -29.57200050354004,-73.69599914550781 -29.57200050354004,-73.69599914550781 C-29.57200050354004,-73.69599914550781 -29.57200050354004,-130.3979949951172 -29.57200050354004,-130.3979949951172 C-29.57200050354004,-146.72999572753906 -16.332000732421875,-159.968994140625 0,-159.968994140625 C0,-159.968994140625 0,-159.968994140625 0,-159.968994140625 C16.332000732421875,-159.968994140625 29.57200050354004,-146.72999572753906 29.57200050354004,-130.3979949951172 C29.57200050354004,-130.3979949951172 29.57200050354004,-73.69599914550781 29.57200050354004,-73.69599914550781z"/></g><g opacity="1" transform="matrix(1,0,0,1,0,0)"><g opacity="1" transform="matrix(1,0,0,1,151.3820037841797,272.7040100097656)"><path stroke-linecap="round" stroke-linejoin="round" fill-opacity="0" class="primary" stroke="#121331" stroke-opacity="1" stroke-width="7" d=" M2.771456718444824,-8.394000053405762 C2.771456718444824,-8.394000053405762 2.771456718444824,8.394000053405762 2.771456718444824,8.394000053405762"/></g><g opacity="1" transform="matrix(1,0,0,1,348.6180114746094,272.8059997558594)"><path stroke-linecap="round" stroke-linejoin="round" fill-opacity="0" class="primary" stroke="#121331" stroke-opacity="1" stroke-width="7" d=" M-2.771456718444824,-8.394000053405762 C-2.771456718444824,-8.394000053405762 -2.771456718444824,8.394000053405762 -2.771456718444824,8.394000053405762"/></g></g></g><g style="display: block;" transform="matrix(0.9998477101325989,0.017452405765652657,-0.017452405765652657,0.9998477101325989,215.4612579345703,254.3855743408203)" opacity="1"><g opacity="1" transform="matrix(1,0,0,1,0,0)"><path stroke-linecap="round" stroke-linejoin="round" fill-opacity="0" class="primary" stroke="#121331" stroke-opacity="1" stroke-width="7" d=" M-62.56999969482422,159.1719970703125 C-62.56999969482422,202.65199279785156 -62.56999969482422,300.5610046386719 -62.56999969482422,332.0459899902344 M-41.428001403808594,235.1719970703125 C-41.428001403808594,278.6520080566406 -41.428001403808594,376.5610046386719 -41.428001403808594,408.0459899902344 M61.56999969482422,159.1719970703125 C61.56999969482422,202.65199279785156 61.56999969482422,300.5610046386719 61.56999969482422,332.0459899902344 M41.512001037597656,235.1719970703125 C41.512001037597656,278.6520080566406 41.512001037597656,376.5610046386719 41.512001037597656,408.0459899902344"/></g></g></g></g></svg>
+        <svg class="hero-vapor-trail" viewBox="0 0 40 180" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false">
+          <line x1="12" y1="0" x2="12" y2="180" stroke="#fff" stroke-width="6" stroke-linecap="round" opacity="0.7"/>
+          <line x1="28" y1="0" x2="28" y2="180" stroke="#fff" stroke-width="6" stroke-linecap="round" opacity="0.7"/>
+          <line x1="12" y1="40" x2="12" y2="180" stroke="#bcd0e8" stroke-width="3" stroke-linecap="round" opacity="0.5"/>
+          <line x1="28" y1="60" x2="28" y2="180" stroke="#bcd0e8" stroke-width="3" stroke-linecap="round" opacity="0.5"/>
+        </svg>
+      </div>
+      <a href="app.html" class="try-app-btn">تجربة التطبيق</a>
+    </div>
+  </section>
+  <!-- Start of Modern Feature Carousel Section -->
+  <section class="aircare-carousel-section" style="background:#0a2956; color:#fff; padding: 60px 0;">
+    <div class="aircare-carousel" style="display:flex;align-items:center;justify-content:center;gap:40px;max-width:1200px;margin:0 auto;min-height:340px;">
+      <div class="carousel-image" style="flex:1;display:flex;justify-content:center;">
+        <img id="carousel-img" src="aircare_watch/aircare.png" alt="AirCare Smartwatch" style="max-width:320px;width:100%;border-radius:2rem;box-shadow:0 4px 24px rgba(0,0,0,0.15);">
+      </div>
+      <div class="carousel-text" style="flex:1;max-width:500px;">
+        <ul id="feature-list" style="list-style:none;padding:0;margin:0 0 24px 0;"></ul>
+        <div id="feature-desc" style="font-size:1.1rem;line-height:2;"></div>
+      </div>
+    </div>
+  </section>
+  <!-- End of Modern Feature Carousel Section -->
+  <script>
+    // English carousel data
+    const carouselData = [
+      {
+        img: 'aircare_watch/aircare.png',
+        title: 'سوار AirCare الذكي',
+        desc: 'ابتكار تقني يرافقك في رحلتك، يوفر الأمان والإرشاد الذكي للمسافرين من ذوي الإعاقة.'
+      },
+      {
+        img: 'aircare_watch/emergency.png',
+        title: 'مساعدة الطوارئ',
+        desc: 'بلمسة واحدة يمكنك إرسال نداء استغاثة ومشاركة موقعك مع الجهات المختصة أو أقربائك.'
+      },
+      {
+        img: 'aircare_watch/voice gudance.jpg',
+        title: 'الإرشاد الصوتي',
+        desc: 'استقبل التعليمات الصوتية الفورية أثناء الرحلة لمزيد من الاستقلالية والأمان.'
+      }
+    ];
+    let idx = 0;
+    function updateCarousel() {
+      // Update image
+      const d = carouselData[idx];
+      document.getElementById('carousel-img').src = d.img;
+      document.getElementById('carousel-img').alt = d.title;
+      // Update feature list
+      const ul = document.getElementById('feature-list');
+      ul.innerHTML = '';
+      carouselData.forEach((item, i) => {
+        const li = document.createElement('li');
+        li.textContent = item.title;
+        li.style.padding = '10px 0 10px 0';
+        li.style.fontSize = '1.2rem';
+        li.style.cursor = 'pointer';
+        li.style.borderLeft = i === idx ? '3px solid #fff' : '3px solid transparent';
+        li.style.marginLeft = '-16px';
+        if (i === idx) {
+          li.style.fontWeight = '700';
+          li.style.color = '#fff';
+        } else {
+          li.style.fontWeight = '400';
+          li.style.color = '#888';
+        }
+        li.onclick = function() {
+          idx = i;
+          updateCarousel();
+        };
+        ul.appendChild(li);
+      });
+      // Update description
+      document.getElementById('feature-desc').textContent = d.desc;
+    }
+    setInterval(() => {
+      idx = (idx + 1) % carouselData.length;
+      updateCarousel();
+    }, 4000);
+    // Initial load
+    updateCarousel();
+  </script>
+  <main class="main-content">
+    <section class="home-section">
+      <h2 class="main-headline">رحلات آمنة ومريحة لذوي الإعاقة</h2>
+      <p class="intro-text">اير كير هو نظام ذكي يدعم المسافرين من ذوي الإعاقة البصرية أو السمعية أو الحركية لرحلة أكثر استقلالية وأماناً.</p>
+      <ul class="home-highlights">
+        <li>🔷 يدعم رؤية السعودية 2030</li>
+        <li>🔷 يعزز الأمان وتجربة المسافر</li>
+      </ul>
+    </section>
+    <section class="about-section" id="about">
+      <h2 class="about-headline">تقنية ذكية لرحلة أفضل</h2>
+      <p class="about-text">يجمع اير كير بين تطبيق جوال وسوار ذكي لمرافقة المسافر طوال الرحلة وتسهيل التواصل مع الطاقم.</p>
+    </section>
+    <section class="features-section" id="features">
+      <h2 class="features-headline">المميزات</h2>
+      <ul class="features-list">
+        <li><span class="feature-icon">📲</span> تطبيق ذكي سهل الاستخدام</li>
+        <li><span class="feature-icon">🩺</span> سوار صحي لمتابعة الحالة</li>
+        <li><span class="feature-icon">🔒</span> خصوصية وأمان عالي</li>
+        <li><span class="feature-icon">🚑</span> استجابة سريعة للطوارئ</li>
+      </ul>
+    </section>
+    <section class="benefits-section" id="benefits">
+      <h2 class="benefits-headline">الفئات المستفيدة</h2>
+      <ul class="benefits-list">
+        <li>سالم: كفيف - إرشاد صوتي واهتزازات</li>
+        <li>عبدالله: أصم - تنبيهات ضوئية</li>
+        <li>نورة: صرع - خطة طوارئ فورية</li>
+      </ul>
+    </section>
+    <section class="why-section" id="why">
+      <h2 class="why-headline">لماذا اير كير؟</h2>
+      <ul class="why-list">
+        <li>✅ يدعم جميع الإعاقات</li>
+        <li>✅ خطة طوارئ مخصصة</li>
+        <li>✅ استجابة أسرع وأكثر دقة</li>
+        <li>✅ استقلالية وكرامة للمسافر</li>
+      </ul>
+    </section>
+    <section class="partners-section" id="partners">
+      <h2 class="partners-headline">الشركاء</h2>
+      <ul class="partners-list">
+        <li>منصة نفاذ</li>
+        <li>شركات الطيران</li>
+        <li>هيئة الطيران المدني</li>
+        <li>مصنعو الأجهزة الذكية</li>
+      </ul>
+    </section>
+  </main>
+  <script>
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function(e) {
+        const target = document.querySelector(this.getAttribute('href'));
+        if (target) {
+          e.preventDefault();
+          target.scrollIntoView({ behavior: 'smooth' });
+        }
+      });
+    });
+  </script>
+</body>
+</html> 
